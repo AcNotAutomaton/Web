@@ -5,7 +5,7 @@
         </el-aside>
 
         <el-container>
-            <el-header style="text-align: right; font-size: 20px">
+            <el-header style="text-align: right; font-size: 15px;">
                 <HeaderView></HeaderView>
             </el-header>
 
@@ -39,13 +39,5 @@ export default {
     background-color: #B3C0D1;
     color: #333;
     line-height: 60px;
-}
-
-.el-aside {
-    color: #333;
-}
-
-.el-main {
-    padding: 5px;
 }
 </style>

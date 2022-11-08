@@ -68,6 +68,7 @@ import { Menu, Message, Setting } from '@element-plus/icons-vue';
 
 export default {
     name: "AsideView",
+
     components: {
         Menu,
         Message,
@@ -77,5 +78,7 @@ export default {
 </script>
 
 <style scoped>
-
+.el-aside {
+    color: red;
+}
 </style>

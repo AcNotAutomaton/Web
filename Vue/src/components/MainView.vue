@@ -27,5 +27,7 @@ export default {
 </script>
 
 <style scoped>
-
+.el-main {
+    padding: 5px;
+}
 </style>
