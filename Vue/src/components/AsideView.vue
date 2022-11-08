@@ -4,7 +4,7 @@
             <el-sub-menu index="1">
                 <template #title>
                     <el-icon>
-                        <message />
+                        <Message></Message>
                     </el-icon>Navigator One
                 </template>
                 <el-menu-item-group>
@@ -23,7 +23,7 @@
             <el-sub-menu index="2">
                 <template #title>
                     <el-icon>
-                        <icon-menu />
+                        <Menu></Menu>
                     </el-icon>Navigator Two
                 </template>
                 <el-menu-item-group>
@@ -42,7 +42,7 @@
             <el-sub-menu index="3">
                 <template #title>
                     <el-icon>
-                        <setting />
+                        <Setting></Setting>
                     </el-icon>Navigator Three
                 </template>
                 <el-menu-item-group>
@@ -64,8 +64,15 @@
 
 <script>
 
+import { Menu, Message, Setting } from '@element-plus/icons-vue';
+
 export default {
-    name: "AsideView"
+    name: "AsideView",
+    components: {
+        Menu,
+        Message,
+        Setting
+    }
 }
 </script>
 

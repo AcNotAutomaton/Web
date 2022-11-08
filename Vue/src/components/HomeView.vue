@@ -5,10 +5,8 @@
         </el-aside>
 
         <el-container>
-            <el-header style="text-align: right; font-size: 12px">
-                <div class="toolbar">
-                    <HeaderView></HeaderView>
-                </div>
+            <el-header style="text-align: right; font-size: 20px">
+                <HeaderView></HeaderView>
             </el-header>
 
             <el-main>
