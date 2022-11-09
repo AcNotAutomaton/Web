@@ -1,84 +1,44 @@
 <template>
     <el-scrollbar>
-        <el-menu :default-openeds="['1', '3']">
-            <el-sub-menu index="1">
-                <template #title>
-                    <el-icon>
-                        <Message></Message>
-                    </el-icon>Navigator One
-                </template>
-                <el-menu-item-group>
-                    <template #title>Group 1</template>
-                    <el-menu-item index="1-1">Option 1</el-menu-item>
-                    <el-menu-item index="1-2">Option 2</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group title="Group 2">
-                    <el-menu-item index="1-3">Option 3</el-menu-item>
-                </el-menu-item-group>
-                <el-sub-menu index="1-4">
-                    <template #title>Option4</template>
-                    <el-menu-item index="1-4-1">Option 4-1</el-menu-item>
-                </el-sub-menu>
-            </el-sub-menu>
-            <el-sub-menu index="2">
-                <template #title>
-                    <el-icon>
-                        <Menu></Menu>
-                    </el-icon>Navigator Two
-                </template>
-                <el-menu-item-group>
-                    <template #title>Group 1</template>
-                    <el-menu-item index="2-1">Option 1</el-menu-item>
-                    <el-menu-item index="2-2">Option 2</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group title="Group 2">
-                    <el-menu-item index="2-3">Option 3</el-menu-item>
-                </el-menu-item-group>
-                <el-sub-menu index="2-4">
-                    <template #title>Option 4</template>
-                    <el-menu-item index="2-4-1">Option 4-1</el-menu-item>
-                </el-sub-menu>
-            </el-sub-menu>
-            <el-sub-menu index="3">
-                <template #title>
-                    <el-icon>
-                        <Setting></Setting>
-                    </el-icon>Navigator Three
-                </template>
-                <el-menu-item-group>
-                    <template #title>Group 1</template>
-                    <el-menu-item index="3-1">Option 1</el-menu-item>
-                    <el-menu-item index="3-2">Option 2</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group title="Group 2">
-                    <el-menu-item index="3-3">Option 3</el-menu-item>
-                </el-menu-item-group>
-                <el-sub-menu index="3-4">
-                    <template #title>Option 4</template>
-                    <el-menu-item index="3-4-1">Option 4-1</el-menu-item>
-                </el-sub-menu>
-            </el-sub-menu>
+        <el-menu active-text-color="#ffd04b" background-color="#545c64" text-color="#fff" style="height: 100vh;"
+            default-active="/Home">
+            <el-menu-item index="/Home">
+                <el-icon>
+                    <HomeFilled></HomeFilled>
+                </el-icon>
+                <span>首页</span>
+            </el-menu-item>
+
+            <el-menu-item index="/One">
+                <el-icon>
+                    <HomeFilled></HomeFilled>
+                </el-icon>
+                <span>导航1</span>
+            </el-menu-item>
+
+            <el-menu-item index="/Two">
+                <el-icon>
+                    <HomeFilled></HomeFilled>
+                </el-icon>
+                <span>导航2</span>
+            </el-menu-item>
         </el-menu>
     </el-scrollbar>
 </template>
 
 <script>
 
-import { Menu, Message, Setting } from '@element-plus/icons-vue';
 
 export default {
     name: "AsideView",
 
     components: {
-        Menu,
-        Message,
-        Setting
     }
 }
 </script>
 
 <style scoped>
 .el-aside {
-    color: red;
+    color: black;
 }
 </style>
