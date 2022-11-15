@@ -1,5 +1,5 @@
 <template>
-    <el-scrollbar>
+    <el-scrollbar style="height: 500px">
         <el-table :data="tableData">
             <el-table-column prop="date" label="Date" width="140" />
             <el-table-column prop="name" label="Name" width="120" />
@@ -27,7 +27,5 @@ export default {
 </script>
 
 <style scoped>
-.el-main {
-    padding: 5px;
-}
+
 </style>

@@ -1,5 +1,5 @@
 # Springboot + Vue3
-## Warehouse Management Project(仓库管理系统)
+## Library Management System(图书管理系统)
 
 #### 前端：Vue3、Element-Plus
 #### 后端：Springboot Mybatis-plus

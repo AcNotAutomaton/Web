@@ -1,12 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../components/HomeView'
+import NavBar from '../components/NavBar'
+import HomeView from '../views/HomeView'
+import NotFound from '../views/NotFound'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'NavVar',
+    component: NavBar,
+  },
+  {
+    path: '/home/',
+    name: 'home_view',
+    component: HomeView,
+  },
+  {
+    path: "/404/",
+    name: "404",
+    component: NotFound,
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/404/"
   }
+
 ]
 
 const router = createRouter({

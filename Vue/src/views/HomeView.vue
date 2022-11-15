@@ -1,5 +1,5 @@
 <template>
-    <el-container class="layout-container-demo" style="height: 500px">
+    <el-container class="layout-container-demo" style="height: 600px">
         <el-aside width="200px">
             <AsideView></AsideView>
         </el-aside>

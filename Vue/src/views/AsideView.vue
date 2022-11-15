@@ -27,13 +27,14 @@
 </template>
 
 <script>
-
+import { HomeFilled } from '@element-plus/icons-vue';
 
 export default {
     name: "AsideView",
 
     components: {
-    }
+    HomeFilled
+}
 }
 </script>
 
