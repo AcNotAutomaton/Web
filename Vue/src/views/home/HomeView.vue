@@ -1,5 +1,5 @@
 <template>
-    <el-tabs v-model="activeName" type="card" class="demo-tabs" @tab-click="handleClick">
+    <el-tabs v-model="activeName" type="card" class="demo-tabs">
         <el-tab-pane v-for="(item, index) in types" :label="item.title" :name="item.tname">
             <div class="bookitem" v-for="(item, index) in showBooks">
                 <img :src="item.bookUrl">
