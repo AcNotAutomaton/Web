@@ -1,0 +1,132 @@
+{
+  "types": [
+    {
+      "id": "1",
+      "tname": "story",
+      "title": "小说"
+    },
+    {
+      "id": "2",
+      "tname": "child",
+      "title": "童书"
+    },
+    {
+      "id": "3",
+      "tname": "education",
+      "title": "教育"
+    },
+    {
+      "id": "4",
+      "tname": "periodical",
+      "title": "期刊杂资"
+    },
+    {
+      "id": "5",
+      "tname": "science",
+      "title": "科学"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "bookName": "遗落的南境三部曲",
+      "bookUrl": "https://img3m6.ddimg.cn/60/1/29370786-1_l_11.jpg",
+      "price": 79,
+      "count": "101",
+      "author": "(美) 杰夫·范德米",
+      "type": "story"
+    },
+    {
+      "id": "2",
+      "bookName": "无人知晓",
+      "bookUrl": "https://img3m8.ddimg.cn/19/19/29388268-1_l_6.jpg",
+      "price": 79,
+      "count": 100,
+      "author": "田中雪莱",
+      "type": "story"
+    },
+    {
+      "id": "3",
+      "bookName": "证明三部曲：人性的",
+      "bookUrl": "https://img3m6.ddimg.cn/11/5/410287196-1_l_5.jpg",
+      "price": 67.5,
+      "count": 100,
+      "author": "（日）森村诚一",
+      "type": "story"
+    },
+    {
+      "id": "4",
+      "bookName": "鬼吹灯全八册",
+      "bookUrl": "https://img3m0.ddimg.cn/70/29/27896290-1_l_12.jpg",
+      "price": 79,
+      "count": 100,
+      "author": "天下霸唱",
+      "type": "story"
+    },
+    {
+      "id": "5",
+      "bookName": "平凡的世界：全三册",
+      "bookUrl": "https://img3m4.ddimg.cn/34/12/29253544-1_l_16.jpg",
+      "price": 79,
+      "count": 100,
+      "author": "路遥",
+      "type": "story"
+    },
+    {
+      "id": "7",
+      "bookName": "世界地理",
+      "bookUrl": "https://img3m3.ddimg.cn/76/27/29179633-1_h_16.jpg",
+      "price": "103",
+      "count": "66",
+      "author": "刘兴诗",
+      "type": "child"
+    },
+    {
+      "id": "eqv-Gd7",
+      "bookName": "考试脑科学",
+      "bookUrl": "http://img3m0.ddimg.cn/44/3/29222270-1_b_29.jpg",
+      "price": "27",
+      "count": "100",
+      "author": "加文·普雷特-平尼",
+      "type": "education"
+    },
+    {
+      "id": "5",
+      "bookName": "平凡的世界：全三册",
+      "bookUrl": "https://img3m4.ddimg.cn/34/12/29253544-1_l_16.jpg",
+      "price": 79,
+      "count": 100,
+      "author": "路遥",
+      "type": "story"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "cly",
+      "userPassword": "123456",
+      "userType": "admin",
+      "age": 12,
+      "sex": "女",
+      "img": "https://img2.baidu.com/it/u=2095991097,2889050411&fm=253&fmt=auto&app=138&f=PNG?w=360&h=360"
+    },
+    {
+      "id": "2",
+      "userName": "小王",
+      "userPassword": "123",
+      "userType": "common",
+      "age": 14,
+      "sex": "女",
+      "img": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fm.imeitou.com%2Fuploads%2Fallimg%2F211205%2F5-211205140512P7.jpg&refer=http%3A%2F%2Fm.imeitou.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1670639955&t=4119d4d3533755922dc6fdb247b66458"
+    },
+    {
+      "id": "3",
+      "userName": "小红",
+      "userPassword": "123",
+      "userType": "common",
+      "age": 15,
+      "sex": "女",
+      "img": "https://img2.baidu.com/it/u=2224969300,3427227510&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"
+    }
+  ]
+}
