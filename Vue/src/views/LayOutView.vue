@@ -30,7 +30,7 @@
                             <component :is="isCollapse ? 'Expand' : 'Fold'"></component>
                         </el-icon>
                         <el-icon :size="16" color="#55bc8a" style="vertical-align: middle;padding-left:2rem;">
-                            <Timer />
+                            <Timer></Timer>
                         </el-icon>
                         <span style="padding-right: 2rem;vertical-align: middle;">{{ nowTimes }}</span>
                     </div>
@@ -39,7 +39,7 @@
                             <span class="el-dropdown-link" style="color:var(--theme);">
                                 <span style="cursor:pointer;vertical-align: middle;">{{ userName }} 欢迎您</span>
                                 <el-icon style="vertical-align: middle;">
-                                    <arrow-down />
+                                    <arrow-down></arrow-down>
                                 </el-icon>
                             </span>
                             <template #dropdown>
@@ -56,17 +56,18 @@
             </el-main>
         </el-container>
     </el-container>
-
 </template>
 <script>
 import { reactive, toRefs, onMounted, onBeforeMount, computed } from "vue";
 import { timeFormate } from '../utils/utils.js'
 import Submenu from "../components/Submenu.vue"
 import { useRouter } from "vue-router"
+import { Timer } from "@element-plus/icons-vue";
 export default {
     components: {
         //引入组件
-        Submenu
+        Submenu,
+        Timer
     },
     setup() {
         //实例化userouter

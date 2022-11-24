@@ -64,15 +64,6 @@
       "type": "story"
     },
     {
-      "id": "5",
-      "bookName": "平凡的世界：全三册",
-      "bookUrl": "https://img3m4.ddimg.cn/34/12/29253544-1_l_16.jpg",
-      "price": 79,
-      "count": 100,
-      "author": "路遥",
-      "type": "story"
-    },
-    {
       "id": "7",
       "bookName": "世界地理",
       "bookUrl": "https://img3m3.ddimg.cn/76/27/29179633-1_h_16.jpg",
@@ -98,12 +89,21 @@
       "count": 100,
       "author": "路遥",
       "type": "story"
+    },
+    {
+      "id": "QE0hruo",
+      "bookName": "Linux",
+      "bookUrl": "https://cdn.acwing.com/media/activity/surface/QQ%E6%88%AA%E5%9B%BE20210722233821.png",
+      "price": "149",
+      "count": "100",
+      "author": "yxc",
+      "type": "education"
     }
   ],
   "users": [
     {
       "id": "1",
-      "userName": "小张",
+      "userName": "admin",
       "userPassword": "123456",
       "userType": "admin",
       "age": 12,

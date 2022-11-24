@@ -63,11 +63,6 @@ const routes = [
                 name: "BookDetail",
                 meta: { title: "图书详情" },
                 component: () => import('views/home/BookDetail.vue')
-            },
-            {
-                path: "/hello",
-                name: "HelloWorld",
-                component: () => import('../components/HelloWorld.vue')
             }
         ]
     }
