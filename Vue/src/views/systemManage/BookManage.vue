@@ -60,6 +60,8 @@
             </tr>
         </tbody>
     </table>
+    <el-pagination :page-size="pageSize" :pager-count="pageCount" layout="prev, pager, next"
+        v-model:current-page="currentPage" @current-change="showCurrentBookPage()" :total="pageTotal" />
     <br /> <br /> <br /> <br />
 </template>
 <style scoped>
@@ -90,12 +92,7 @@ export default {
                     data.types = response.data
                 })
                 .catch((error) => console.log(error)); // 请求失败处理
-            axios
-                .get("books?_order=asc")
-                .then((response) => {
-                    data.books = response.data
-                })
-                .catch((error) => console.log(error)); // 请求失败处理
+            data.showCurrentBookPage();
         });
         const data = reactive({
             newBook: {
@@ -114,6 +111,10 @@ export default {
             oldBook: [],
             flag: "0",//0 代表添加状态 1 代表编辑状态
             editIndex: 0,//如果是编辑状态，被编辑的书籍的 index
+            pageSize: 5,
+            pageCount: 7,
+            pageTotal: 0,
+            currentPage: 1,
             reset: () => {
                 data.newBook = { bookName: "", bookUrl: "", price: 0, count: 0, author: "", type: "" };
             },
@@ -135,11 +136,8 @@ export default {
                     axios
                         .post("books", data.newBook)
                         .then((response) => {
-                            data.books.push(response.data);
                             alert("添加成功！");
-                            data.newBook = {
-                                bookName: "", bookUrl: "", price: 0, count: 0, author: "", type: ""
-                            };
+                            data.showCurrentBookPage()
                         }).catch((error) => console.log(error)); // 请求失败处理
                 }
             },
@@ -147,7 +145,7 @@ export default {
                 debugger;
                 axios.delete("books/" + item.id)
                     .then((response) => {
-                        data.books.splice(data.books.indexOf(item), 1);
+                        data.showCurrentBookPage();
                     }).catch((error) => console.log(error)); // 请求失败处理
             },
             editBook: (item) => {
@@ -168,6 +166,17 @@ export default {
             },
             cancelSearch: () => {
                 data.books = data.oldBook;
+            },
+            showCurrentBookPage: () => {
+                axios
+                    .get("books?_page=" + data.currentPage + "&_limit=" + data.pageSize + "&_order=asc"
+                    )
+                    .then((response) => {
+                        debugger;
+                        data.books = response.data;
+                        data.pageTotal = Number(response.headers['x-total-count']);
+                    })
+                    .catch((error) => console.log(error)); // 请求失败处理
             }
         });
         return {
