@@ -8,8 +8,7 @@
         </el-table-column>
         <el-table-column align="center" label="操作">
             <template #default="scope">
-                <el-button type="primary" v-on:click="toPay(scope.row)" v-if="!scope.row.isPay">去支
-                    付</el-button>
+                <el-button type="primary" v-on:click="toPay(scope.row)" v-if="!scope.row.isPay">去支付</el-button>
                 <el-button type="primary" disabled="true" v-if="scope.row.isPay">已支付</el-button>
                 &nbsp;<el-button type="danger" icon="delete" v-on:click="deleteOrder(scope.row)"></el-button>
             </template>
