@@ -32,12 +32,14 @@
         <br><br><br><br><br><br>
     </div>
 </template>
+
 <script>
 import { computed, reactive, toRefs, onMounted } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import axios from "axios";
 import { QuillEditor } from "@vueup/vue-quill";
 import "@vueup/vue-quill/dist/vue-quill.snow.css";
+
 export default {
     components: {
         //引入组件
@@ -160,6 +162,7 @@ export default {
     }
 }
 </script>
+
 <style>
 .bookInfo {
     overflow: hidden;

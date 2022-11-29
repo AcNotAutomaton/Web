@@ -10,10 +10,12 @@
         </el-tab-pane>
     </el-tabs>
 </template>
+
 <script>
 import { computed, reactive, toRefs, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import axios from "axios";
+
 export default {
     setup() {
         //实例化userouter
@@ -24,7 +26,6 @@ export default {
                 .then((response) => {
                     data.types = response.data;
                 }).catch((error) => console.log(error)); // 请求失败处理
-
             axios.get("books?_order=asc")
                 .then((response) => {
                     data.books = response.data;
@@ -56,6 +57,7 @@ export default {
     },
 }
 </script>
+
 <style lang="scss" scoped>
 .bookItem {
     widows: 150px;
