@@ -31,7 +31,7 @@
       "id": "1",
       "bookName": "遗落的南境三部曲",
       "bookUrl": "https://img3m6.ddimg.cn/60/1/29370786-1_l_11.jpg",
-      "price": 79,
+      "price": "89",
       "count": "101",
       "author": "(美) 杰夫·范德米",
       "type": "story"
@@ -91,24 +91,51 @@
       "type": "story"
     },
     {
-      "id": "QE0hruo",
-      "bookName": "Linux",
-      "bookUrl": "https://cdn.acwing.com/media/activity/surface/QQ%E6%88%AA%E5%9B%BE20210722233821.png",
-      "price": "149",
-      "count": "1",
-      "author": "yxc",
-      "type": "education"
+      "id": "Mn2lbLI",
+      "bookName": "bibi动物园：等你好",
+      "bookUrl": "https://img3m9.ddimg.cn/84/2/29473869-1_l_19.jpg",
+      "price": "34",
+      "count": "100",
+      "author": "bibi园长",
+      "type": "child"
+    },
+    {
+      "bookName": "陪孩子读山海经",
+      "bookUrl": "https://img3m9.ddimg.cn/32/30/29475599-1_l_22.jpg",
+      "price": "48",
+      "count": "99",
+      "author": "罗旻",
+      "type": "child",
+      "id": "tRJXYDA"
+    },
+    {
+      "id": "7iHlLO5",
+      "bookName": "中国味道：刻在胃里",
+      "bookUrl": "https://img3m8.ddimg.cn/85/35/29476048-1_l_14.jpg",
+      "price": "45",
+      "count": "100",
+      "author": "丘濂、黑麦",
+      "type": "science"
+    },
+    {
+      "id": "DBrUMKu",
+      "bookName": "穿过地平线",
+      "bookUrl": "https://img3m4.ddimg.cn/96/3/29470614-1_l_13.jpg",
+      "price": "34",
+      "count": "33",
+      "author": "李四光",
+      "type": "story"
     }
   ],
   "users": [
     {
       "id": "1",
-      "userName": "admin",
+      "userName": "小张",
       "userPassword": "123456",
       "userType": "admin",
       "age": 12,
       "sex": "女",
-      "img": "https://cdn.acwing.com/media/user/profile/photo/1_lg_844c66b332.jpg"
+      "img": "https://img2.baidu.com/it/u=2095991097,2889050411&fm=253&fmt=auto&app=138&f=PNG?w=360&h=360"
     },
     {
       "id": "2",
