@@ -130,7 +130,7 @@
   "users": [
     {
       "id": "1",
-      "userName": "小张",
+      "userName": "admin",
       "userPassword": "123456",
       "userType": "admin",
       "age": 12,
