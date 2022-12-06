@@ -15,6 +15,7 @@
         </el-table-column>
     </el-table>
 </template>
+
 <script>
 import { reactive, toRefs, onMounted } from "vue";
 import axios from "axios";
@@ -55,6 +56,7 @@ export default {
     }
 }
 </script>
+
 <style scoped>
 
 </style>

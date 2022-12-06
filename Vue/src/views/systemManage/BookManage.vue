@@ -81,13 +81,7 @@
         v-model:current-page="currentPage" @current-change="showCurrentBookPage()" :total="pageTotal" />
     <br /> <br /> <br /> <br />
 </template>
-<style scoped>
-.bookInfo>div {
-    width: 33%;
-    float: left;
-    margin-bottom: 20px;
-}
-</style>
+
 <script>
 import { reactive, toRefs, onMounted } from "vue";
 import axios from "axios";
@@ -193,3 +187,11 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.bookInfo>div {
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+}
+</style>
