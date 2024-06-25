@@ -1,0 +1,123 @@
+{
+  "goods": [
+    {
+      "id": 2,
+      "name": "芭比娃娃",
+      "thumbnail": "芭比娃娃.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "霸天机甲",
+      "thumbnail": "霸天机甲.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 128
+    },
+    {
+      "id": 4,
+      "name": "海公牛",
+      "thumbnail": "海公牛.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 45
+    },
+    {
+      "id": 5,
+      "name": "小飞机",
+      "thumbnail": "小飞机.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 123
+    },
+    {
+      "id": 6,
+      "name": "小熊猫",
+      "thumbnail": "小熊猫.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 123
+    },
+    {
+      "id": 7,
+      "name": "初音未来",
+      "thumbnail": "初音未来.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 599
+    },
+    {
+      "id": 8,
+      "name": "兔八哥",
+      "thumbnail": "兔八哥.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 50
+    },
+    {
+      "id": 10,
+      "name": "五彩魔方",
+      "thumbnail": "五彩魔方.jpg",
+      "content": "<p>图文并茂描述商品详情</p>",
+      "price": 10000000000
+    }
+  ],
+  "cart": [
+    {
+      "id": 8,
+      "userId": "user1",
+      "goodsId": "4",
+      "num": 3
+    },
+    {
+      "userId": "user1",
+      "goodsId": "3",
+      "num": 1,
+      "id": 9
+    },
+    {
+      "userId": "user1",
+      "goodsId": "2",
+      "num": 1,
+      "id": 10
+    },
+    {
+      "userId": "user1",
+      "goodsId": "4",
+      "num": 1,
+      "id": 11
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "no": "20200101",
+      "name": "李利",
+      "photo": "01001.jpg",
+      "title": "毕业设计题目",
+      "content": "毕业设计项目功能描述，使用富文本。",
+      "classId": 1
+    },
+    {
+      "id": 2,
+      "no": "20200211",
+      "name": "码农",
+      "photo": "01003.jpg",
+      "title": "毕业设计题目",
+      "content": "毕业设计项目功能描述，使用富文本。",
+      "classId": 2
+    }
+  ],
+  "class": [
+    {
+      "id": 1,
+      "no": "01",
+      "name": "2021计算机科学与技术1班"
+    },
+    {
+      "id": 2,
+      "no": "02",
+      "name": "2021计算机科学与技术2班"
+    },
+    {
+      "id": 3,
+      "no": "03",
+      "name": "2021计算机科学与技术3班"
+    }
+  ]
+}

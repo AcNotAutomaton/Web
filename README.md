@@ -9,3 +9,8 @@
 #### [Element-ui 官网地址](https://element.eleme.io/)
 
 Element-ui，适用于Vue2；Element-Plus，适用于Vue3；Element-ui里面的部分功能在Vue3里面不适用。
+
+## Shop
+#### 前端：Vue 
+#### 后端：JSON
+#### 商品管理系统，用于商品的添加，删除，购买 
