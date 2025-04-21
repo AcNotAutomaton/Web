@@ -18,10 +18,15 @@
 	</el-sub-menu>
 </template>
 
-<script setup>
-const props = defineProps({
-	data: Array
-})
+<script setup lang="ts">
+import type { MenuItem } from '../views/LayOutView.vue';
 
-const emit = defineEmits(['change', 'delete'])
+const props = defineProps<{
+	data: MenuItem
+}>();
+
+const emit = defineEmits<{
+	(e: 'change'): void
+	(e: 'delete'): void
+}>();
 </script>

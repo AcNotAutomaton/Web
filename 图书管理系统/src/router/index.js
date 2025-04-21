@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
     {
         path: '/',
@@ -69,7 +69,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory('/'),
     routes
 })
 router.beforeEach((to, from, next) => {
@@ -79,7 +79,11 @@ router.beforeEach((to, from, next) => {
         alert("请先登录，再访问页面！");
         router.push({ path: 'login' });
     } else {
-        next();
+        if (!to.matched.length) {
+            next('/');
+        } else {
+            next();
+        }
     }
 })
 
